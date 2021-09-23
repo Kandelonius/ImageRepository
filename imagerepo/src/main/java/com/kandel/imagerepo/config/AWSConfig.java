@@ -8,12 +8,20 @@ import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.Properties;
+
 @Configuration
 public class AWSConfig {
+
+    Properties prop = new Properties();
+
+    prop.load(new )
 
     @Bean
     public AmazonS3 s3() {
         AWSCredentials awsCredentials = new BasicAWSCredentials(
+                "placeholder",
+                "placeholder"
         );
 
         return AmazonS3ClientBuilder
